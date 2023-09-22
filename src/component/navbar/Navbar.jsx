@@ -16,11 +16,11 @@ export const Navbar = () => {
 
       </div>
       <div className={style.logo}> Solution</div>
-      <div className={style.link}>
+      <div className={style.links}>
         <ThemeToggle />
-        <Link href={'/'} >HomePage</Link>
-        <Link href={'/'} >Contact</Link>
-        <Link href={'/'} >About</Link>
+        <Link href={'/'} className={style.link} >HomePage</Link>
+        <Link href={'/'} className={style.link}>Contact</Link>
+        <Link href={'/'} className={style.link}>About</Link>
         <AuthLink />
 
       </div>
