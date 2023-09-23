@@ -1,0 +1,29 @@
+import React from 'react'
+import style from './card.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+export const Card = () => {
+    return (
+        <div className={style.container}>
+
+            <div className={style.imgContainer}>
+                <Image src={"/p1.jpeg"} alt="" fill />
+            </div>
+            <div className={style.textContainer}>
+                <div className={style.details}>
+                    <span className={style.date}>11.02.2023</span>
+                    <span className={style.category}>CULTURE</span>
+                </div>
+                <Link  href={"/"}>
+                <h1 className={style.title}>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                </Link>
+                <p className={style.desc}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure accusantium odio fugiat ab! Aspernatur eos architecto maxime omnis veniam est inventore, ipsum qui. Earum odit facere libero qui aliquid?
+                </p>
+                <Link href={"/"} className={style.link}>
+                Read more
+                </Link>
+            </div>
+        </div>
+    )
+}

@@ -1,0 +1,14 @@
+.container{
+    margin-bottom: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.imgContainer{
+    flex: 1;
+    height: 350px;
+    position: relative;
+}
+.textContainer{
+    flex: 1;
+}
