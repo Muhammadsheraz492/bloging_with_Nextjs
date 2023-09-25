@@ -1,0 +1,64 @@
+.title {
+    font-size: 28px;
+}
+
+.items {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.imgContainer {
+    flex: 1;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.img {
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    object-fit: cover;
+}
+
+.textContainer {
+    flex: 4;
+
+}
+
+.postTitle {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--sofTextColor);
+}
+
+.deatils {
+    font-size: 12px;
+
+}
+
+.date {
+    color: gray;
+}
+
+.category {
+    padding: 3px 8px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: white;
+    width: max-content;
+    font-size: 12px;
+}
+
+.category.travel {
+    background: orange;
+}

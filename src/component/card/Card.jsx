@@ -7,11 +7,11 @@ export const Card = () => {
         <div className={style.container}>
 
             <div className={style.imgContainer}>
-                <Image src={"/p1.jpeg"} alt="" fill />
+                <Image src={"/p1.jpeg"} alt="" fill  className={style.img}/>
             </div>
             <div className={style.textContainer}>
                 <div className={style.details}>
-                    <span className={style.date}>11.02.2023</span>
+                    <span className={style.date}>11.02.2023 -</span>
                     <span className={style.category}>CULTURE</span>
                 </div>
                 <Link  href={"/"}>

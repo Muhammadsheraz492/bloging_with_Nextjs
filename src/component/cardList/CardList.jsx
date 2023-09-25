@@ -8,6 +8,9 @@ export const CardList = () => {
       <h1 className={style.title}>Recent Posts</h1>
       <div className={style.posts}>
        <Card />
+       <Card />
+       <Card />
+       <Card />
       </div>
       <Pagination />
     </div>
