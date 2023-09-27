@@ -1,0 +1,32 @@
+.container {}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.textContainer {
+    flex: 1;
+}
+
+.title {
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.userImageContainer {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.imageConainer {
+    flex: 1;
+    height: 350px;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+}
