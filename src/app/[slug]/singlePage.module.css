@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.imageConainer {
+.imageContainer {
     flex: 1;
     height: 350px;
     position: relative;
@@ -29,4 +29,36 @@
 
 .image {
     object-fit: cover;
+}
+.avatar{
+border-radius: 50%;
+object-fit: cover;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.username{
+    font-size: 20px;
+    font-weight: 500px;
+}
+.userTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   color: var(--softTextColor); 
+}
+.content{
+    display: flex;
+    gap: 50px;
+}
+.post{
+    flex: 5;
+    margin-top: 60px;
+}
+.description p{
+    font-size: 20px;
+    font-weight: 300px;
+    margin-bottom: 20px;
 }

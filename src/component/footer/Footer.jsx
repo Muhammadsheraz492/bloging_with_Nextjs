@@ -22,7 +22,7 @@ export const Footer = () => {
       <div className={style.links}>
         <div className={style.list}>
           <span  style={{fontWeight:"bold"}}>Links</span>
-          <Link href={"/"} >Homepage</Link>
+          <Link href={"/gffgb"} >Homepage</Link>
           <Link href={"/"} >Blog</Link>
           <Link href={"/"} >About</Link>
           <Link href={"/"} >Contact</Link>
