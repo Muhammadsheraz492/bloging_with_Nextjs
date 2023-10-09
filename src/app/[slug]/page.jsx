@@ -2,6 +2,7 @@ import Ract from 'react'
 import style from './singlePage.module.css'
 import { Menu } from '@/component/Menu/Menu'
 import Image from 'next/image'
+import Comments from '@/component/comments/Comments'
 function SinglePage() {
   return (
     <div className={style.container}>
@@ -41,11 +42,14 @@ function SinglePage() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis temporibus odio repellendus dolorem dignissimos, vitae ut commodi neque placeat quia laudantium delectus harum velit! Officia minima magnam saepe totam.</p>
 
        </div>
+     <div  style={style.commit}>
+      <Comments />
+     </div>
         </div>
         <Menu />
       </div>
-
-
+    
+       
     </div>
   )
 }
