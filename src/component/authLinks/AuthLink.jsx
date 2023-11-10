@@ -6,7 +6,7 @@ export const AuthLink = () => {
   const statius = "authenticated"
   const [open,setopen]=useState(false)
   return <>
-    {statius == "authenticated" ? (
+    {statius == "noauthenticated" ? (
       <Link href={"/login"}  className={Style.link}>
         Login
       </Link>
