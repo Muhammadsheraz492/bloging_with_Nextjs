@@ -2,11 +2,13 @@
 import React, { useState } from 'react'
 import Style from './authLink.module.css'
 import Link from 'next/link'
+import { signOut, useSession } from 'next-auth/react'
 export const AuthLink = () => {
-  const statius = "authenticated"
+  const {status} = useSession()
   const [open,setopen]=useState(false)
-  return <>
-    {statius == "noauthenticated" ? (
+  console.log(status);
+ return <>
+    {status == "unauthenticated" ? (
       <Link href={"/login"}  className={Style.link}>
         Login
       </Link>
@@ -16,7 +18,7 @@ export const AuthLink = () => {
         <Link href={"/write"}  className={Style.link}>
           write
         </Link>
-        <span className={Style.link}>Logout</span>
+        <span className={Style.link} onClick={signOut}>Logout</span>
       </>
 
     )
