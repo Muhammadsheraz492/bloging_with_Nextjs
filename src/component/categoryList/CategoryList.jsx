@@ -17,9 +17,7 @@ const getData = async () => {
 
   const CategoryList = async() => {
   const data=await getData();
-  console.log('====================================');
   console.log(data);
-  console.log('====================================');
   return (
     <div className={style.container}>
       <h1 className={style.title}>Popular Categories</h1>
@@ -27,7 +25,8 @@ const getData = async () => {
      {data.categories?.map((item)=>(
           <Link
           href={"/blog"}
-          className={`${style.category} ${style.style}`}
+          className={`${style.category} `}
+          style={{background:`#${item.color}`}}
           key={item._id}
         >
        {

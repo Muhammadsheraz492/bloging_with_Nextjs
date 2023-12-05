@@ -45,7 +45,7 @@ model User {
   image         String?
   accounts      Account[]
   sessions      Session[]
-  Post          Post[]
+  // Post          Post[]
   Comment       Comment[]
 }
 
@@ -60,27 +60,26 @@ model VerificationToken {
 model Category {
   id      String    @id @default(cuid()) @map("_id")
   slug    String    @unique
+  color   String    
   title   String
   img     String?
-  Post    Post[]
+  // Post    Post[]
 }
 
 model Post {
-  id        String   @id @default(cuid()) @map("_id")
-  createdAt DateTime @default(now())
-
-  slug      String   @unique
+  id        String    @id @default(cuid()) @map("_id")
+  createdAt DateTime  @default(now())
+  slug      String    @unique
   title     String
-  des       String
+  desc      String
   img       String?
-  views     Int      @default(0)
-  catSlug   String
-  cat       Category @relation(fields: [catSlug], references: [slug])
-  userEmail String
-  user      User     @relation(fields: [userEmail], references: [email])
-  comment Comment[]
+  views     Int       @default(0)
+  // catSlug   String
+  // cat       Category  @relation(fields: [catSlug], references: [slug])
+  // userEmail String
+  // user      User      @relation(fields: [userEmail], references: [email])
+  comment   Comment[]
 }
-
 model Comment {
   id        String   @id @default(cuid()) @map("_id")
   createdAt DateTime @default(now())

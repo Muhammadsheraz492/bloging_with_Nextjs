@@ -26,9 +26,9 @@
 .category.style{
     background-color: #57c4ff31;
 }
-/* .category.style{
+.category.style{
     background-color: #57c4ff31;
-} */
+}
 @media screen and (max-width:1280px) {
    .category{
     width: 20%;
