@@ -2,9 +2,9 @@ import React from 'react'
 import style from './card.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-export const Card = () => {
+export const Card = ({item,key}) => {
     return (
-        <div className={style.container}>
+        <div className={style.container}  key={key}>
 
             <div className={style.imgContainer}>
                 <Image src={"/p1.jpeg"} alt="" fill  className={style.img}/>
@@ -15,7 +15,7 @@ export const Card = () => {
                     <span className={style.category}>CULTURE</span>
                 </div>
                 <Link  href={"/"}>
-                <h1 className={style.title}>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                <h1 className={style.title}>{item.title}</h1>
                 </Link>
                 <p className={style.desc}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure accusantium odio fugiat ab! Aspernatur eos architecto maxime omnis veniam est inventore, ipsum qui. Earum odit facere libero qui aliquid?

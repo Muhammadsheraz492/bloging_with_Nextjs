@@ -13,3 +13,7 @@ justify-content: space-between;
     text-align: center;
     /* text-transform: capitalize; */
 }
+.button:disabled{
+    border-color: rgba(220, 20, 60, 0.452);
+    cursor:not-allowed;
+}
