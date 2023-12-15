@@ -15,10 +15,6 @@ const Getdata=async(slug)=>{
 async function SinglePage({params}) {
   const {slug}=params;
   const {post}=await Getdata(slug)
-  // console.log(params);
-  console.log('====================================');
-  console.log(post);
-  console.log('====================================');
   return (
     <div className={style.container}>
       <div className={style.infoContainer}>
@@ -56,7 +52,7 @@ async function SinglePage({params}) {
         <div className={style.post}>
        <div className={style.description} dangerouslySetInnerHTML={{__html:post?.desc}} />
      <div  style={style.commit}>
-      <Comments />
+      <Comments postSlug={slug} />
      </div>
         </div>
         <Menu />

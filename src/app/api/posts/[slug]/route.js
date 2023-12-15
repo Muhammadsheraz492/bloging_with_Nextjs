@@ -3,9 +3,7 @@ import { NextResponse } from "next/server";
 
 export const GET = async (req,{params}) => {
 const {slug}=params;
-console.log('====================================');
-console.log("This is Params %s",slug);
-console.log('====================================');
+
 
     try {
          const post=await prisma.Post.findUnique({
