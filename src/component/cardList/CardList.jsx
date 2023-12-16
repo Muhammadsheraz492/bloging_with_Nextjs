@@ -6,9 +6,7 @@ const getData=async(page,cat)=>{
   const res=await fetch(`http://localhost:3000/api/posts?page=${page}&cat=${cat||""}`,{
     cache:"no-cache"
   })
-  //  console.log(res);
   if(!res.ok){
-   console.log(cat);
   throw new Error("Something went wrong Fetching Posts")
  }
  return res.json()

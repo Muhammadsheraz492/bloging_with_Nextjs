@@ -6,7 +6,6 @@ import { signOut, useSession } from 'next-auth/react'
 export const AuthLink = () => {
   const {status} = useSession()
   const [open,setopen]=useState(false)
-  console.log(status);
  return <>
     {status == "unauthenticated" ? (
       <Link href={"/login"}  className={Style.link}>

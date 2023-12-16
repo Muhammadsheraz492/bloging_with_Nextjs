@@ -5,9 +5,6 @@ import style from './blog.module.css'
 export default function page  ({searchParams}) {
   const page=parseInt(searchParams)||1
   const {cat}=searchParams
-   console.log('====================================');
-   console.log("This is Category %s",cat);
-   console.log('====================================');
   return (
     <div className={style.container}>
     <h1 className={style.title}>{cat} Blog</h1>

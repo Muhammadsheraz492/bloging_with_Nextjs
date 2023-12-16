@@ -9,8 +9,8 @@ import AuthProvider from '@/providers/AuthProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Blog App',
-  description: 'The best blog app!',
+  title: 'Cybernate Blog',
+  description: 'This Service is produced by Tocybernate Solution',
 }
 
 export default function RootLayout({ children }) {
