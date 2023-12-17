@@ -6,8 +6,9 @@ const {slug}=params;
 
 
     try {
-         const post=await prisma.Post.findUnique({
+         const post=await prisma.Post.update({
             where:{postSlug:slug},
+            data:{views:{increment:1}},
             include:{user:true}
          })
          

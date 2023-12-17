@@ -28,3 +28,27 @@ export const GET = async (req) => {
         return new NextResponse(JSON.stringify({ message: "Something went wrong" }, { status: 500 }))
     }
 }
+
+
+export const POST = async (req) => {
+    const sesstion = await getAuthSession()
+    if (!sesstion) {
+        return new NextResponse(JSON.stringify({
+            message: "Not Authenticated"
+        }, {
+            status: 200
+        }))
+    }
+    try {
+        const body = await req.json()
+        const post = await prisma.Post.create({
+            data: { ...body, userEmail: sesstion.user.email }
+        })
+        return new NextResponse(JSON.stringify({ post }, { status: 200 }))
+    } catch (error) {
+        console.log('====================================');
+        console.log(error);
+        console.log('====================================');
+        return NextResponse(JSON.stringify({ message: "Something went wrong" }, { status: 500 }))
+    }
+}
