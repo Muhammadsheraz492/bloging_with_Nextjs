@@ -9,7 +9,7 @@ import AuthProvider from '@/providers/AuthProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Cybernate Blog',
+  title: 'ToCybernate Blogs',
   description: 'This Service is produced by Tocybernate Solution',
 }
 

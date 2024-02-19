@@ -16,5 +16,5 @@ const page=parseInt(searchParams.page)||1
       <CardList page={page} />
       <Menu />
     </div>
-  </div>;
+  </div>
 }

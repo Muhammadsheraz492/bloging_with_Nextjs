@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const Featured = () => {
   return (
     <div  className={style.container}>
-   <h1  className={style.title}><b>Hey, Ahmad here!</b> Discover my Stories and creative ideas</h1>
+   <h1  className={style.title}><b>Hey, Muhammad here!</b> Discover my Stories and creative ideas</h1>
    <div  className={style.post}>
     <div  className={style.imgContainer}>
       <Image  src={"/p1.jpeg"} alt="" fill  className={style.img}/>

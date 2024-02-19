@@ -46,9 +46,7 @@ export const POST = async (req) => {
         })
         return new NextResponse(JSON.stringify({ post }, { status: 200 }))
     } catch (error) {
-        console.log('====================================');
-        console.log(error);
-        console.log('====================================');
+
         return NextResponse(JSON.stringify({ message: "Something went wrong" }, { status: 500 }))
     }
 }
