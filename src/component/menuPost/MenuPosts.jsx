@@ -2,10 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import style from './menuPost.module.css'
 import Image from 'next/image'
-
 export const MenuPosts = ({ item,withImage }) => {
-    // console.log(withImage);
-    // console.log(withImage);
     console.log(item);
     return (
         <div className={style.items}>
